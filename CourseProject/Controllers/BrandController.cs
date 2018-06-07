@@ -82,7 +82,5 @@ namespace CourseProject.Controllers
             }
             return RedirectToAction("Edit");
         }
-
-
     }
 }
