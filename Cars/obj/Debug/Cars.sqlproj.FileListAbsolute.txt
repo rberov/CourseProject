@@ -1,0 +1,10 @@
+C:\Users\My Computer\source\repos\CourseProject\Cars\bin\Debug\Cars.dacpac
+C:\Users\My Computer\source\repos\CourseProject\Cars\bin\Debug\Cars.dll
+C:\Users\My Computer\source\repos\CourseProject\Cars\bin\Debug\Cars.pdb
+C:\Users\My Computer\source\repos\CourseProject\Cars\obj\Debug\Cars.dll
+C:\Users\My Computer\source\repos\CourseProject\Cars\obj\Debug\Cars.pdb
+C:\Users\My Computer\source\repos\CourseProject\Cars\obj\Debug\Cars.sqlprojAssemblyReference.cache
+C:\Users\My Computer\source\repos\CourseProject\Cars\obj\Debug\Model.xml
+C:\Users\My Computer\source\repos\CourseProject\Cars\obj\Debug\refactor.xml
+C:\Users\My Computer\source\repos\CourseProject\Cars\obj\Debug\postdeploy.sql
+C:\Users\My Computer\source\repos\CourseProject\Cars\obj\Debug\predeploy.sql

@@ -1,0 +1,57 @@
+﻿@model CourseProject.Models.CarViewModel
+@using CourseProject.Helpers
+@using CourseProject.Models
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Cars</h2>
+
+<div class="table-actions">
+    @if (LoginUserSession.Current.IsAdministrator)
+    {
+        @Html.ActionLink("Add New Car", "EditCar", "Car", null, new { @class = "btn btn-primary btn-sm" })
+    }
+
+
+</div>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Horsepower</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach(CarsViewModel car in Model.cars)
+        {
+        <tr>
+            <td>@car.ID</td>
+            <td>@car.CarBrand.Name</td>
+            <td>@car.Model</td>
+            <td>@car.Color</td>
+            <td>@car.HP</td>
+            @if (LoginUserSession.Current.IsAdministrator)
+            {
+            <td>@Html.ActionLink("Edit", "EditCar", "Car", new { id = car.ID }, new { @class = "btn btn-primary btn-sm" })</td>
+            <td>@Html.ActionLink("Delete", "Delete", "Car", new { id = car.ID }, new { onclick = "return confirm('Are you sure you want to delete this car?');", @class = "btn btn-danger btn-sm" })</td>
+            }
+
+        </tr>
+        }
+
+    </tbody>
+
+</table>
+
